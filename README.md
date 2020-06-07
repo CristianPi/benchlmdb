@@ -1,5 +1,5 @@
 # setup
 yarn
 
-#run
+# run
 yarn start
