@@ -98,6 +98,7 @@ function cursorGoToNext() {
         readed++;
         if (readed >= total) {
             cursor.goToRange(keys[0]);
+            readed = 0; // reset to prevent goToRange on every loop
         }
     }
 }
@@ -110,6 +111,7 @@ function cursorGoToNextgetCurrentBinary() {
         readed++;
         if (readed >= total) {
             cursor.goToRange(keys[0]);
+            readed = 0; // reset to prevent goToRange on every loop
         }
         const v = cursor.getCurrentBinary();
     }
